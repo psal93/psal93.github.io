@@ -1,23 +1,55 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Patrick Salembier's Personal Websites</title>
+  <meta charset="utf-8"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+	<header class="container">
+  	<div class="row">
+      <h1 class="col-sm-4"><a href="index.html">P.S.</a></h1>
+      <nav class="col-sm-8 text-right">
+        <p><a href="projects/projects.html">Projects</a></p>
+        <p><a href="webMaps/webMaps.html">Web Maps</a></p>
+        <p><a href="TechResume2016.pdf">Resume PDF Download </a></p>
+        <p><a href="contact/contact.html">Contact</a></p>
+      </nav>
+    </div>
+  </header>
+  <section class="container">
+    <div class="row">
+      <figure class="col-sm-6">
+        <h3>Bio</h3>
+        <p>I am a Computer Science and Geography Student at the University of Victoria graduating in April 2017.  I enjoy learning about geospatial software development,
+        graphics, and web development.  Apart from geomatics related topics I enjoy exercising, playing guitar, video games
+        and well-groomed facial hair.</p>
+      </figure>
+      <figure class="col-sm-5">
+        <img src="stacheSelfie.jpg">
+      </figure>
+    </div>
+  </section>
+  <footer class="container">
+    <div class="row">
+      <p class="col-sm-4">&copy; 2016 Patrick Salembier</p>
+      <ul class="col-sm-8">
+        <li class="col-sm-1">
+        	  <a href="https://github.com/psal93">
+              <img src="gitHubLogo_Big.png">
+            </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
 
-<div class="home">
+  <script
+    src="https://code.jquery.com/jquery-3.1.1.min.js"
+    integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+    crossorigin="anonymous"></script>
+  <script src='main.js'></script>
 
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+</body>
+</html>
