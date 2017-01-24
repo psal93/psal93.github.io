@@ -1,10 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Patrick Salembier's contact</title>
+  <title>Patrick Salembier's Web Maps</title>
   <meta charset="utf-8"/>
+  <!--Boostrap -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
   <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
+  <!-- leaflet -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.2/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.0.2/dist/leaflet.js"></script>
+
+  <!-- AJAX -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+  <!-- leaflet AJAX plugin -->
+  <script src='https://raw.github.com/calvinmetcalf/leaflet-ajax/master/dist/leaflet.ajax.min.js'></script>
   <link rel="stylesheet" type="text/css" href="webMaps.css">
 </head>
 <body>
@@ -20,10 +30,8 @@
     </div>
   </header>
   <section class="container">
-    <div class="row">
-      <figure class="col-sm-12">
-        <h3>Coming soon!</h3>
-      </figure>
+    <h3>Tweeting Habits during the 2016 Presidential Election</h3>
+    <div id="mapid">
     </div>
   </section>
   <footer class="container">
@@ -39,11 +47,7 @@
     </div>
   </footer>
 
-  <script
-    src="https://code.jquery.com/jquery-3.1.1.min.js"
-    integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-    crossorigin="anonymous"></script>
-  <script src='main.js'></script>
-
+  <script type='text/javascript' src='state_counts_GeoJSON.geojson'></script>
+  <script type='text/javascript' src='webMaps.js'></script>
 </body>
 </html>
