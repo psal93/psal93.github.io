@@ -1,0 +1,135 @@
+var cities = {
+   "type": "FeatureCollection",
+   "features": [
+       {
+           "type": "Feature",
+           "geometry": {
+               "type": "Point",
+               "coordinates": [-123.159875, 49.272416]
+           },
+           "properties": {
+               "name": "Vancouver"
+           }
+       },
+       {
+         "type": "Feature",
+         "geometry": {
+             "type": "Point",
+             "coordinates": [-79.3832, 43.6532]
+         },
+         "properties": {
+             "name": "Toronto"
+         }
+       },
+       {
+         "type": "Feature",
+         "geometry": {
+             "type": "Point",
+             "coordinates": [-113.4909, 53.5444]
+         },
+         "properties": {
+             "name": "Edmonton"
+         }
+       },
+       {
+         "type": "Feature",
+         "geometry": {
+             "type": "Point",
+             "coordinates": [-104.6189, 50.4452]
+         },
+         "properties": {
+             "name": "Regina"
+         }
+       },
+       {
+         "type": "Feature",
+         "geometry": {
+             "type": "Point",
+             "coordinates": [-97.1384, 49.8951]
+         },
+         "properties": {
+             "name": "Winnipeg"
+         }
+       },
+       {
+         "type": "Feature",
+         "geometry": {
+             "type": "Point",
+             "coordinates": [-71.2080, 46.8139]
+         },
+         "properties": {
+             "name": "Quebec City"
+         }
+       },
+       {
+         "type": "Feature",
+         "geometry": {
+             "type": "Point",
+             "coordinates": [-66.6431, 45.9636]
+         },
+         "properties": {
+             "name": "Fredericton"
+         }
+       },
+       {
+         "type": "Feature",
+         "geometry": {
+             "type": "Point",
+             "coordinates": [-63.5752, 44.6488]
+         },
+         "properties": {
+             "name": "Halifax"
+         }
+       },
+       {
+         "type": "Feature",
+         "geometry": {
+             "type": "Point",
+             "coordinates": [-63.1311, 46.2382]
+         },
+         "properties": {
+             "name": "Charlottetown"
+         }
+       },
+       {
+         "type": "Feature",
+         "geometry": {
+             "type": "Point",
+             "coordinates": [-52.7126, 47.5615]
+         },
+         "properties": {
+             "name": "St. John's"
+         }
+       },
+       {
+         "type": "Feature",
+         "geometry": {
+             "type": "Point",
+             "coordinates": [-135.0568, 60.7212]
+         },
+         "properties": {
+             "name": "Whitehorse"
+         }
+       },
+       {
+         "type": "Feature",
+         "geometry": {
+             "type": "Point",
+             "coordinates": [-114.3718, 62.4540]
+         },
+         "properties": {
+             "name": "Yellowknife"
+         }
+       },
+       {
+         "type": "Feature",
+         "geometry": {
+             "type": "Point",
+             "coordinates": [-68.5170, 63.7467]
+         },
+         "properties": {
+             "name": "Iqaluit"
+         }
+       }
+   ]
+};

@@ -1,0 +1,225 @@
+a{
+  color: white;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+header {
+  border-radius: 10px;
+  background-color: black;
+  border-color: black;
+  padding: 20px 0;
+  margin-bottom: 10px;
+}
+
+header .row,
+footer .row {
+  display: flex;
+  align-items: center;
+}
+
+header h1 {
+  color: white;
+  font-weight: 700;
+  margin: 0;
+}
+
+header nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+header p {
+  color: white;
+  padding: 0 20px;
+  margin: 0;
+}
+
+header a:hover{
+  text-decoration: none;
+  color : #979aa0;
+}
+
+.jumbotron {
+  display: flex;
+  align-items: center;
+  background-image: url('https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-4/jumbotron.jpg');
+  background-size: cover;
+  color: #ffffff;
+  height: 500px;
+  text-shadow: 0.25px 0.25px 0.25px #000000;
+}
+
+.jumbotron h2 {
+  font-size: 60px;
+  font-weight: 700;
+  margin: 0;
+  color: #fff;
+}
+
+.jumbotron h3 {
+  margin: 0 0 20px;
+  color: #fff;
+}
+
+section .row img {
+  margin: 0 0 30px;
+  width: 100%;
+}
+
+.col-md-6 {
+  margin: 0 0 30px;
+}
+
+.btn.btn-primary {
+  border-radius: 2px;
+  border: 0px;
+  color: white;
+  text-shadow: none;
+  background-color: #34914d;
+}
+
+.btn.btn-primary:hover {
+  color: white;
+  background-color: #49d16d;
+}
+
+.btn-secondary {
+  background-color: #E8DFE0;
+  color: #ffffff;
+  margin: 0 0 30px;
+}
+
+footer {
+  font-size: 12px;
+  padding: 20px 0;
+}
+
+footer .col-sm-8 {
+  display: flex;
+  justify-content: flex-end;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer li img {
+  width: 32px;
+  height: 32px;
+}
+
+#mapid{
+   height: 500px;
+}
+
+#geoGameId{
+  height: 500px;
+}
+
+#myEmail{
+  color: blue;
+}
+
+.info {
+    padding: 6px 8px;
+    font: 14px/16px Arial, Helvetica, sans-serif;
+    background: white;
+    background: rgba(255,255,255,0.8);
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    border-radius: 5px;
+}
+.info h4 {
+    margin: 0 0 5px;
+    color: #777;
+}
+
+.legend {
+    line-height: 18px;
+    color: #555;
+}
+.legend i {
+    width: 18px;
+    height: 18px;
+    float: left;
+    margin-right: 8px;
+    opacity: 0.7;
+}
+
+.startBtnStyle {
+  background-color: #f21010;
+  background-image: -moz-linear-gradient(center top, #4D90FE, #4787ED);
+  border: 1px solid #3079ED;
+  color: #FFFFFF;
+  margin-top: 30px;
+  margin-bottom: 4px;
+  margin-left: 20px;
+}
+
+.btnStyle {
+    background-color: #4D90FE;
+    background-image: -moz-linear-gradient(center top, #4D90FE, #4787ED);
+    border: 1px solid #3079ED;
+    color: #FFFFFF;
+    padding: 4px;
+    margin-top: 30px;
+    margin-bottom: 4px;
+    margin-left: 50px;
+    margin-left: 20px;
+}
+
+.endBtnStyle{
+  background-color: #7b7e82;
+  background-image: -moz-linear-gradient(center top, #4D90FE, #4787ED);
+  border: 1px solid #3079ED;
+  color: #FFFFFF;
+  margin-top: 30px;
+  margin-bottom: 4px;
+  margin-left: 50px;
+  margin-left: 20px;
+}
+
+.submitBtnStyle{
+  background-color: #30d60a;
+  background-image: -moz-linear-gradient(center top, #4D90FE, #4787ED);
+  border: 1px solid #3079ED;
+  color: #FFFFFF;
+  margin-top: 30px;
+  margin-bottom: 4px;
+  margin-left: 20px;
+}
+
+.score{
+  text-align: left;
+}
+
+.distance{
+  text-align: left;
+}
+
+.scoreNum{
+  text-align: left;
+}
+
+.btnStyle:hover{
+  background-color: #76a9fc;
+}
+
+#mapWrapper {
+  border:  1px solid black;
+}
+
+#totalScore{
+
+}
+
+#totalDist{
+
+}
+
+.leaflet-marker-icon{
+  cursor:-webkit-grab;
+}
