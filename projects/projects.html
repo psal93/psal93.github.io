@@ -6,6 +6,12 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
   <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" type="text/css" href="projects.css">
+  <!-- Project.js CDN -->
+  <!--<script src='https://cdnjs.com/libraries/pdf.js'></script> -->
+  <!-- PDFOBject CDN-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfobject/2.1.1/pdfobject.js"></script>
+  <!--PDF.js CDN -->
+  <script src="https://cdnjs.com/libraries/pdf.js"></script>
 </head>
 <body>
 	<header class="container">
@@ -27,7 +33,7 @@
       <figure class="col-sm-5">
         <img src="twitterLogo.png" style="width:315px;height:256px">
       </figure>
-      <figure class="col-sm-5">
+      <figure class="col-sm-7">
         <p>A python program used to collect geo-located tweets based on a list of hashtags.  The tweets are then converted to a GeoJSON
           format to be used in GIS software and/or webmapping</p>
         <p><a class="btn btn-primary" href="https://github.com/psal93/TwitterMining">Check it out on Github</a></p>
@@ -40,9 +46,27 @@
       <figure class="col-sm-5">
         <img src="reactLogo.svg" style="width:315px;height:256px">
       </figure>
-      <figure class="col-sm-5">
+      <figure class="col-sm-6">
         <p>A React-based application used to track errands.</p>
         <p><a class="btn btn-launch" href="https://psal93.github.io/ReactToDo/">Launch</a> <a class="btn btn-primary" href="https://github.com/psal93/ReactToDo">Check it out on Github</a></p>
+      </figure>
+    </div>
+    <div class="row">
+      <figure class="col-sm-12">
+        <h3>Satellite Derived Bathymetry in Python</h3>
+      </figure>
+      <figure class = "col-sm-12">
+        <p>In 2018 I worked with Veronique Jégat on behalf of IIC Technologies to develop an implementation of Satellite Derived Bathymetry.
+        First, the available imagery of the area of interest from The Planet Explorer API.  Second, the user selects
+        the appropriate image from the availabe bands to be used in a raster equation.  Lastly, the program runs the SDB equation
+        using the selected bands and outputs a raster showing an approximation of the topography of the ocean floor.</p>
+        <p>This program was presented on October 3rd 2018 at the 2018 Shallow Survey Conference in St. John's NewFound using the
+          following slideshow.  For more infomation please contact <a href="http://www.iictechnologies.com/contact-us">IIC Technologies Canada</a></p>
+      </figure>
+      <figure class="col-sm-12">
+        <div id="pdfHolder">
+          <script>PDFObject.embed("SS2018_IIC_SDBprimer_VeroniqueJegat_Final.pdf", "#pdfHolder", {height:"70rem"});</script>
+        </div>
       </figure>
     </div>
   </section>
@@ -63,7 +87,6 @@
     src="https://code.jquery.com/jquery-3.1.1.min.js"
     integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
     crossorigin="anonymous"></script>
-  <script src='main.js'></script>
 
 </body>
 </html>
